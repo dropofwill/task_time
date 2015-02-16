@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Will"]
   spec.email         = ["whp3652@rit.edu"]
   spec.summary       = %q{A taskwarrior plugin that adds time tracking and reporting features.}
-  spec.description   = %q{A taskwarrior plugin that adds time tracking and reporting features.}
+  spec.description   = %q{A taskwarrior plugin that adds time tracking and reporting features. As such depends on taskwarrior tool to be installed/configured along with any Ruby dependencies in the Gemfile.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
