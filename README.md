@@ -1,6 +1,13 @@
-# task-time
+# task_time
+
+
+## Description
 
 A taskwarrior plugin that adds time tracking and reporting features (still WIP)
+
+
+
+## Usage
 
 ```
 task_time <filter> start
@@ -11,6 +18,33 @@ task_time <filter> start
                    report ...
                    export ...
 ```
+
+
+## Dependencies
+
+* Taskwarrior 2.4 > (require custom UDAs and duration data types)
+
+* Ruby >2 (untested on older versions)
+
+
+## Build Instructions
+
+```
+rake build
+```
+
+
+## Install
+
+```
+rake install
+```
+
+
+## License
+
+Release under the MIT License (MIT) Copyright (&copy;) 2015 Will Paul
+
 
 ## Data & Configuration
 
@@ -56,7 +90,7 @@ Project configs
 Client configs
 
 
-## Reports
+#### Reports
 
 Timesheet
 
@@ -69,7 +103,7 @@ Resolution Time
 Punch Card (Github Chart)
 
 
-## Research
+#### Research
 
 taskw v. tasklib v. new ruby bindings gem
 
