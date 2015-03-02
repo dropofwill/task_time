@@ -24,9 +24,13 @@ task_time <filter> start
 
 ## Dependencies
 
-* Taskwarrior 2.4 > (require custom UDAs and duration data types)
+* Taskwarrior > 2.4 (require custom UDAs, recurrences, and duration data types)
 
-* Ruby >2 (untested on older versions)
+* Ruby > 2 (currently untested on older versions)
+
+* Ruby gem in development [`dropofwill/rtasklib`](http://github.com/dropofwill/rtasklib)
+
+* See `./task_time.gemspec` for the latest Ruby dependencies
 
 
 ## Build Instructions
@@ -48,7 +52,17 @@ rake install
 Release under the MIT License (MIT) Copyright (&copy;) 2015 Will Paul
 
 
-## Data & Configuration
+
+## Research/Planning
+
+### Research
+
+taskw v. tasklib v. new ruby bindings gem: *Decided to role my own ruby wrapper [`**rtasklib**`](http://github.com/dropofwill/rtasklib).*
+
+taskserver: should I save all data in UDA's so taskserver can sync it properly?
+
+
+### Data & Configuration Plan
 
 User      ~/.taskrc
 
@@ -103,10 +117,3 @@ Accuracy
 Resolution Time
 
 Punch Card (Github Chart)
-
-
-#### Research
-
-taskw v. tasklib v. new ruby bindings gem
-
-taskserver: should I save all data in UDA's so taskserver can sync it properly?
