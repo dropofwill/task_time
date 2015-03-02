@@ -57,7 +57,7 @@ Release under the MIT License (MIT) Copyright (&copy;) 2015 Will Paul
 
 ### Research
 
-taskw v. tasklib v. new ruby bindings gem: *Decided to role my own ruby wrapper **[`rtasklib`](http://github.com/dropofwill/rtasklib).***
+taskw v. tasklib v. new ruby bindings gem: *Decided to role my own ruby wrapper [**`rtasklib`**](http://github.com/dropofwill/rtasklib)*
 
 taskserver: should I save all data in UDA's so taskserver can sync it properly?
 
