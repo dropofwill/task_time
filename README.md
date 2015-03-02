@@ -1,6 +1,6 @@
 # task_time
 
-[![Coverage Status](https://travis-ci.org/dropofwill/task_time.svg?branch=master)](https://travis-ci.org/dropofwill/rtasklib) [![Coverage Status](https://coveralls.io/repos/dropofwill/task_time/badge.svg)](https://coveralls.io/r/dropofwill/task_time)
+[![Travis CI Build Status](https://travis-ci.org/dropofwill/task_time.svg?branch=master)](https://travis-ci.org/dropofwill/task_time) [![Coveralls Coverage Status](https://coveralls.io/repos/dropofwill/task_time/badge.svg)](https://coveralls.io/r/dropofwill/task_time)
 
 
 ## Description
