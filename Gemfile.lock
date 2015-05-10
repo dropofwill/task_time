@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     task_time (0.0.1)
+      rtasklib
       thor
 
 GEM
@@ -75,6 +76,7 @@ GEM
       rspec (>= 2.9)
       terminal-notifier (>= 1.4)
     rspec-support (3.2.2)
+    rtasklib (0.1.0)
     shellany (0.0.1)
     simplecov (0.9.2)
       docile (~> 1.1.0)
