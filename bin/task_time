@@ -1,7 +1,88 @@
 #!/usr/bin/env ruby
 
+require 'gli'
 require_relative "../lib/task_time"
 
-include TaskTime
+include GLI::App
+
+program_desc "An addon to TaskWarrior that allows time tracking and reporting"
+
+version TaskTime::VERSION
+
+subcommand_option_handling :normal
+arguments :strict
+
+# desc 'Describe some switch here'
+# switch [:s,:switch]
+
+desc 'Specify where the task_time config file is located'
+arg 'rc_path', :optional
+default_value File.join(ENV['HOME'], '.task_time_rc.yaml')
+flag [:c, :config]
+
+desc "Start a timer on the specified task"
+arg_name 'Describe arguments to start here'
+command :start do |c|
+  c.desc 'Describe a switch to start'
+  c.switch :s
+
+  c.desc 'Describe a flag to start'
+  c.default_value 'default'
+  c.flag :f
+  c.action do |global_options,options,args|
+
+    # Your command logic here
+     
+    # If you have any errors, just raise them
+    # raise "that command made no sense"
+
+    puts "start command ran"
+  end
+end
+
+desc "Stop the timer on the specified task"
+arg_name 'Describe arguments to stop here'
+command :stop do |c|
+  c.action do |global_options,options,args|
+    puts "stop command ran"
+  end
+end
+
+desc 'Describe toggle here'
+arg_name 'Describe arguments to toggle here'
+command :toggle do |c|
+  c.action do |global_options,options,args|
+    puts "toggle command ran"
+  end
+end
+
+desc 'Describe report here'
+arg_name 'Describe arguments to report here'
+command :report do |c|
+  c.action do |global_options,options,args|
+    puts "report command ran"
+  end
+end
+
+pre do |global,command,options,args|
+  # Pre logic here
+  # Return true to proceed; false to abort and not call the
+  # chosen command
+  # Use skips_pre before a command to skip this block
+  # on that command only
+  true
+end
+
+post do |global,command,options,args|
+  # Post logic here
+  # Use skips_post before a command to skip this
+  # block on that command only
+end
+
+on_error do |exception|
+  # Error logic here
+  # return false to skip default error handling
+  true
+end
 
 exit run(ARGV)
