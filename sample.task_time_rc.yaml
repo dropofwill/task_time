@@ -1,0 +1,41 @@
+# This example shows all default options that mean something to task_time
+# Arbitrary configs set here will be available in the custom reports
+#
+# Configure TaskWarrior so rtasklib knows where to look for your data
+task_data: "~/.task"
+
+# Set global defaults for generating billing reports
+currency_marker: "$"
+hourly_rate: "50"
+rounding?: true
+rounding_minutes: 15
+
+# describe yourself
+you:
+  first_name:  "Will"
+  middle_name: "Henry"
+  last_name:   "Paul"
+
+  address: "847 Coopers Dr"
+  city:  "Rochester"
+  state: "Minnesota"
+  zip: "14892"
+
+# describe your clients, note that you can override global defaults on a
+# per client basis
+clients:
+  - sample_client:
+      client_name: "Company, inc."
+      contact_first_name: "John"
+      contact_last_name: "Smith"
+
+      address: "847 Coopers Dr"
+      city:  "Rochester"
+      state: "Minnesota"
+      zip: "14892"
+
+      hourly_rate: "25"
+
+      projects: 
+        - "RMA"
+        - "SYN"
