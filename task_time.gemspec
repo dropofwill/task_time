@@ -6,11 +6,11 @@ require 'task_time/version'
 Gem::Specification.new do |spec|
   spec.name          = "task_time"
   spec.version       = TaskTime::VERSION
-  spec.authors       = ["Will"]
+  spec.authors       = ["Will Paul"]
   spec.email         = ["whp3652@rit.edu"]
   spec.summary       = %q{A taskwarrior plugin that adds time tracking and reporting features.}
   spec.description   = %q{A taskwarrior plugin that adds time tracking and reporting features. As such depends on taskwarrior tool to be installed/configured along with any Ruby dependencies in the Gemfile.}
-  spec.homepage      = ""
+  spec.homepage      = "http://github.com/dropofwill/task_time"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -18,7 +18,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  # spec.add_dependency "thor"
   spec.add_dependency "rtasklib"
   spec.add_dependency "gli"
 
