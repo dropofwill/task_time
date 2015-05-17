@@ -2,7 +2,8 @@
 # Arbitrary configs set here will be available in the custom reports
 #
 # Configure TaskWarrior so rtasklib knows where to look for your data
-task_data: "~/.task"
+# task_data: "~/.task"
+task_data: "spec/data/.task"
 
 # Set global defaults for generating billing reports
 currency_marker: "$"

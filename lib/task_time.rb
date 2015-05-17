@@ -17,11 +17,11 @@ module TaskTime
       @config = Helpers.read_config(config)
       @tw = Rtasklib::TW.new(config["data_location"])
       # puts tw.all
-      check_udas
+      # check_udas
     end
 
-    def check_udas req_udas=UDAS
-      puts tw.get_udas
+    def missing_udas req_udas=UDAS
+      req_udas.reject { |uda| tw.uda_exists? uda }
     end
   end
 
